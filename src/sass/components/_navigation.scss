@@ -1,0 +1,21 @@
+.navigation__list {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+
+.navigation__item {
+  list-style: none;
+  width: 63px;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.navigation__link {
+  color: $text-color;
+  text-decoration: none;
+  &:hover {
+    color: $orange;
+  }
+}
