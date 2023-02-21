@@ -1,0 +1,9 @@
+.ico {
+  display: inline-block;
+  cursor: pointer;
+  &_play {
+    background-image: url(/src/assets/img/icons/play.svg);
+    width: 18px;
+    height: 19px;
+  }
+}

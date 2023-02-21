@@ -1,0 +1,40 @@
+.promo {
+  padding: 30px 0 111px 0;
+  display: flex;
+  justify-content: space-between;
+  @extend %font-add;
+
+  &__title {
+    margin-top: 83px;
+    color: $title-promo;
+  }
+
+  &__text {
+    margin-top: 30px;
+    @include font($size: 1.8rem, $height: 2.8rem, $weight: 400);
+    color: $text-promo;
+  }
+
+  &__buttons {
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+  }
+
+  &__link {
+    @include font($size: 1.6rem, $height: 2.4rem, $weight: 600);
+    color: $orange;
+    cursor: pointer;
+    display: flex;
+    gap: 9px;
+
+    &_text {
+      text-decoration: underline;
+    }
+  }
+
+  &__img {
+    max-width: 642px;
+  }
+}

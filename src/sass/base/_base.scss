@@ -7,3 +7,8 @@ body {
   @include font($size: 1.6rem, $height: 2.6rem, $weight: 400);
   
 }
+
+h1 {
+  @extend %font-add;
+  @include font($size: 4.4rem, $height: 5.4rem, $weight: 700)
+}

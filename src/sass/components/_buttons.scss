@@ -1,9 +1,9 @@
 .button {
   @extend %font-prim;
   @include font($size: 1.6rem, $height: 2.2rem, $weight: 600);
-  padding: 11px 25px 13px;
-  border-radius: 4px;
+  
   box-sizing: border-box;
+  cursor: pointer;
 
   &_light {
     border: 1px solid $light-blue;
@@ -20,5 +20,21 @@
     background-color: $orange;
     border: 1px solid $orange;
     color: $white;
+
+    &:hover {
+      background-color: $peach;
+      border: 1px solid $peach;
+    }
   }
+
+  &_header {
+    padding: 11px 25px 11px;
+    border-radius: 4px;
+  }
+
+  &_promo {
+    padding: 15px 43px;
+    border-radius: 4px;
+  }
+  
 }
