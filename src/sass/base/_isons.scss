@@ -1,0 +1,39 @@
+.ico {
+  display: inline-block;
+  cursor: pointer;
+
+  &_play {
+    background-image: url(/src/assets/img/icons/play.svg);
+    width: 18px;
+    height: 19px;
+  }
+
+  &__tool {
+    width: 50px;
+    height: 50px;
+    border-radius: 19px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &_violet {
+      background-color: $ico-violet;
+      background-image: url(/src/assets/img/icons/cursor.svg);
+    }
+
+    &_yellow {
+      background-color: $ico-yellow;
+      background-image: url(/src/assets/img/icons/curved-line.svg);
+    }
+
+    &_red {
+      background-color: $ico-red;
+      background-image: url(/src/assets/img/icons/heart.svg);
+    }
+
+    &_blue {
+      background-color: $ico-blue;
+      background-image: url(/src/assets/img/icons/sand-clock.svg);
+    }
+  }
+
+}

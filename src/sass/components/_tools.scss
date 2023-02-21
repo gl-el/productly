@@ -1,0 +1,36 @@
+.tools {
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/src/assets/img/svg/tools-bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 0px right -5px;
+
+  &__title {
+    max-width: 462px;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__list {
+    margin-top: 70px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 52px;
+  }
+
+  &__item {
+    flex-basis: 260px;
+
+    &_title {
+      margin: 23px 0 17px;
+    }
+  }
+
+  &__button-wrapper {
+    margin-top: 27px;
+    margin-left: 15px;
+  }
+}

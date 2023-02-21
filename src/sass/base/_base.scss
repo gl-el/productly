@@ -13,12 +13,12 @@ h2,
 h3,
 h4,
 h5 {
-  @extend %font-add;
   color: $title-color;
 }
 
 
 h1 {
+  @extend %font-add;
   @include font($size: 4.4rem, $height: 5.4rem, $weight: 700);
 }
 
