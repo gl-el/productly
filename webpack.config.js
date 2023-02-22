@@ -53,7 +53,14 @@ module.exports = {
         generator: {
           filename: 'fonts/[name][ext]'
         }
-      }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'imgs/[name][ext]'
+        }
+      },
     ]
   }
 }
