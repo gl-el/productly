@@ -1,5 +1,7 @@
 .columns-3 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @include columns(30%);
+}
+
+.columns-4 {
+  @include columns(21%);
 }
