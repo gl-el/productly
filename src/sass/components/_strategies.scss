@@ -1,0 +1,47 @@
+.strategies {
+  &__title {
+    margin: 30px 0 0;
+  }
+
+  &__descr {
+    margin: 15px 0 0;
+  }
+
+  &__tags {
+    margin: 23px 0 0;
+  }
+
+  &__layout {
+    margin: 31px 0 0;
+  }
+}
+
+.strategy {
+  flex-basis: 377px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px $shadow-color;
+  margin: 0 0 30px;
+  cursor: pointer;
+  
+  &:hover {
+    box-shadow: 0px 0px 0px $shadow-color;
+  }
+
+  &_wide {
+    flex-basis: 787px;
+  }
+
+  &__img {
+    display: block;
+    border-radius: 8px 8px 0 0;
+  }
+
+  &__content {
+    padding: 24px 34px 26px 33px;
+  }
+
+  &__title {
+    margin: 0 0 31px;
+  }
+
+}

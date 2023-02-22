@@ -1,0 +1,39 @@
+.tags {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  @include font($size: 1.3rem, $height: 2.8rem, $weight: 400);
+}
+
+.strategies__tags {
+  gap: 7px;
+}
+
+.strategy__tags {
+  gap: 5px;
+}
+
+.tag {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 28px;
+  padding: 0 13px;
+  text-align: center;
+  border-radius: 14px;
+}
+
+.bordered__tag {
+  border: 1px solid $light-gray;
+}
+
+.colored__tag {
+  border: 1px solid $tag-colored;
+  background-color: $tag-colored;
+}
+
+.tag_active {
+  border: 1px solid $orange;
+  background-color: $orange;
+  color: $white;
+}

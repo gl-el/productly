@@ -7,13 +7,16 @@
 @import "base/typography";
 @import "base/base";
 @import "base/logo";
-@import "base/isons";
+@import "base/icons";
+@import "base/tags";
 
 
 @import "components/navigation";
 @import "components/buttons";
 @import "components/promo";
 @import "components/tools";
+@import "components/strategies";
 
 @import "layout/wrapper";
 @import "layout/header";
+@import "layout/columns";

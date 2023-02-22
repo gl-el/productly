@@ -29,3 +29,7 @@ h2 {
 h3 {
   @include font($size: 2.2rem, $height: 3rem, $weight: 600);
 }
+
+h4 {
+  @include font($size: 2.4rem, $height: 3.4rem, $weight: 700);
+}
