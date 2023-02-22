@@ -1,7 +1,7 @@
 .columns-3 {
-  @include columns(30%);
+  @include columns(30%, space-between);
 }
 
 .columns-4 {
-  @include columns(21%);
+  @include columns(21%, flex-start)
 }
