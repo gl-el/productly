@@ -1,0 +1,71 @@
+.contacts {
+  background-color: $peach-cream;
+
+  &__wrapper {
+    padding: 62px 0 87px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__layout {
+    margin: 17px 0 0;
+  }
+
+  &__content {
+    max-width: 46%;
+  }
+
+  &__descr {
+    margin: 0 0 59px;
+  }
+
+  &__link {
+    @include font($size: 2.5rem, $height: 2.5rem, $weight: 400);
+    display: flex;
+    gap: 11px;
+    margin: 21px 0 0;
+
+    >* {
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+
+
+}
+
+
+
+.contacts-form {
+
+  &__text,
+  &__area {
+    box-sizing: border-box;
+    border: 1px solid $white;
+    border-radius: 5px;
+    padding: 10px 21px;
+
+    &:focus {
+      border: 1px solid $orange;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $silver;
+    }
+
+  }
+
+  &__area {
+    width: 100%;
+    height: 160px;
+    margin-top: 18px;
+    resize: none;
+  }
+
+  &__button {
+    margin: 20px 0 0;
+  }
+}

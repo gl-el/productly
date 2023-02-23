@@ -1,3 +1,7 @@
+.columns-2 {
+  @include columns(48%, space-between);
+}
+
 .columns-3 {
   @include columns(30%, space-between);
 }

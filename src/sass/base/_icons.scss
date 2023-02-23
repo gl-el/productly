@@ -36,4 +36,17 @@
     }
   }
 
+  &__contact {
+    width: 25px;
+    height: 25px;
+
+    &_tel {
+      background-image: url(/src/assets/img/icons/ico_phone.svg);
+    }
+
+    &_mail {
+      background-image: url(/src/assets/img/icons/ico_mail.svg);
+    }
+  }
+
 }
