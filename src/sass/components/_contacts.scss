@@ -2,7 +2,7 @@
   background-color: $peach-cream;
 
   &__wrapper {
-    padding: 62px 0 87px;
+    padding: 62px 0 81px;
   }
 
   &__title {
@@ -32,11 +32,7 @@
       color: $text-color;
     }
   }
-
-
 }
-
-
 
 .contacts-form {
 
@@ -45,7 +41,7 @@
     box-sizing: border-box;
     border: 1px solid $white;
     border-radius: 5px;
-    padding: 10px 21px;
+    padding: 12px 16px;
 
     &:focus {
       border: 1px solid $orange;
@@ -66,6 +62,6 @@
   }
 
   &__button {
-    margin: 20px 0 0;
+    margin: 12px 0 0;
   }
 }
