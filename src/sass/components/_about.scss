@@ -1,3 +1,5 @@
+$img-gap: 34px;
+
 .about {
   padding: 0 0 101px;
 
@@ -10,16 +12,14 @@
     font-stretch: 90%;
   }
 
+  &__cards {
+    margin: 45px 0 0;
+    padding-right: $img-gap;
+  }
+
 }
 
-$contact-gap: 34px;
-
-.contacts {
-  margin: 45px 0 0;
-  padding-right: $contact-gap;
-}
-
-.contact {
+.about-card {
   max-width: calc(30% - 6px);
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@ $contact-gap: 34px;
     height: 98px;
     border-radius: 50%;
     position: relative;
-    left: $contact-gap;
+    left: $img-gap;
     box-shadow: 0px 15px 30px $shadow-color;
   }
 }
