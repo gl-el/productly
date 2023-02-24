@@ -1,4 +1,4 @@
-@import "vendors/normalize";
+@import "base/normalize";
 
 @import "abstract/constants";
 @import "abstract/mixins";
@@ -19,6 +19,7 @@
 @import "components/about";
 @import "components/contacts";
 @import "components/footer";
+@import "components/links";
 
 @import "layout/wrapper";
 @import "layout/header";
