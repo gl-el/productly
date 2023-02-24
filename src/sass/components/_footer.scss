@@ -1,0 +1,34 @@
+.footer {
+  padding: 56px 0 52px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  padding-left: 160px;
+  padding-right: 120px;
+
+  &__column {
+    max-width: 140px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__link {
+    @include font ($size: 1.6rem, $height: 3.5rem, $weight: 400);
+    text-decoration: none;
+    color: $text-color;
+    
+    &:hover {
+      color: $orange;
+    }
+  }
+}
