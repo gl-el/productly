@@ -9,7 +9,11 @@
 @import "base/logo";
 @import "base/icons";
 @import "base/tags";
+@import "base/burger";
 
+@import "layout/wrapper";
+@import "layout/header";
+@import "layout/columns";
 
 @import "components/navigation";
 @import "components/buttons";
@@ -21,6 +25,3 @@
 @import "components/footer";
 @import "components/links";
 
-@import "layout/wrapper";
-@import "layout/header";
-@import "layout/columns";

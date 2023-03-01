@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   background-image: url(/src/assets/img/svg/tools-bg.svg);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
 
@@ -14,14 +15,29 @@
   }
 
   &__list {
-    margin-top: 70px;
+    margin: 70px 0 0;
     padding: 0;
     list-style: none;
     gap: 61px;
+    @include media-laptop-s {
+      gap: 0;
+      justify-content: space-between;
+    }
+    @include media-tablet {
+      gap: 3%;
+      >.tools__item {
+        flex-basis: 44%;
+  
+      }
+      
+    }
   }
 
   &__item {
-    flex-basis: 260px;
+    margin-bottom: 5px;
+    @include media-tablet {
+      text-align: center;
+    }
 
     &_title {
       margin: 23px 0 17px;
@@ -29,7 +45,7 @@
   }
 
   &__button-wrapper {
-    margin-top: 27px;
+    margin-top: 38px;
     margin-left: 15px;
   }
 }

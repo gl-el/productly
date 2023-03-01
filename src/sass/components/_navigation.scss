@@ -1,8 +1,29 @@
 .navigation__list {
-  padding: 0;
+  padding: 0 0 0 0;
   display: flex;
   flex-direction: row;
   gap: 17px;
+  @extend %transition;
+
+  @include media-tablet {
+    box-sizing: border-box;
+    position: absolute;
+    left: -341px;
+    top: 0px;
+    width: 341px;
+    height: 100vh;
+    margin: 0;
+    background-color: $white;
+    z-index: 3;
+    flex-direction: column;
+    gap: 34px;
+    
+    padding: 124px 55px;
+
+    &_active {
+      transform: translateX(341px);
+    }
+  }
 }
 
 .navigation__item {
@@ -10,11 +31,16 @@
   width: 63px;
   font-size: 1.5rem;
   line-height: 2.8rem;
+
+  @include media-tablet {
+    @include font($size: 2.2rem, $height: 2.8rem, $weight: 400);
+  }
 }
 
 .navigation__link {
   color: $text-color;
   text-decoration: none;
+
   &:hover {
     color: $orange;
   }

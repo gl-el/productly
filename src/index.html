@@ -10,10 +10,15 @@
   <link rel="icon" href="./assets/favicon.png" type="image/png">
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <div class="wrapper header__wrapper">
-      <a class="logo" href="#"></a>
+      <div class="header__logo">
+        <div class="header__burger burger">
+          <span class="burger__line"></span>
+        </div>
+        <a class="logo" href="#"></a>
+      </div>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -30,26 +35,29 @@
           </li>
         </ul>
       </nav>
+      <div class="burger__background"></div>
       <div class="header__buttons">
         <button class="button button_header button_light">Sign In</button>
         <button class="button button_header button_orange">Sign Up</button>
       </div>
     </div>
   </header>
-  <section class="promo wrapper">
-    <div class="promo__content">
-      <h1 class="promo__title">The Design Thinking superpowers</h1>
-      <p class="promo__text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way
-        to imagine your next user experience.</p>
-      <div class="promo__buttons">
-        <button class="button button_orange button_promo">Get started</button>
-        <a link="#" class="promo__link">
-          <span class="ico ico_play"></span>
-          <span class="promo__link_text">Watch the video</span>
-        </a>
+  <section class="promo">
+    <div class="promo__wrapper wrapper">
+      <div class="promo__content">
+        <h1 class="promo__title">The Design Thinking superpowers</h1>
+        <p class="promo__text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way
+          to imagine your next user experience.</p>
+        <div class="promo__buttons">
+          <button class="button button_orange button_promo">Get started</button>
+          <a link="#" class="promo__link">
+            <span class="ico ico_play"></span>
+            <span class="promo__link_text">Watch the video</span>
+          </a>
+        </div>
       </div>
+      <img class="promo__img" src="/src/assets/img/png/promo.png" alt="The Design Thinking superpowers">
     </div>
-    <img class="promo__img" src="/src/assets/img/png/promo.png" alt="The Design Thinking superpowers">
   </section>
   <section class="tools wrapper">
     <h2 class="tools__title">We design tools to unveil your superpowers</h2>
@@ -179,36 +187,45 @@
       </div>
     </div>
   </section>
-  <section class="about wrapper">
-    <h2 class="about__title">About Us</h2>
-    <p class="about__descr">Your About Us page is vital. It’s often the first stop in any user’s journey through a
-      website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do
-      in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome
-      content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
-    <div class="about__cards columns-3">
-      <div class="about-card">
-        <div class="about-card__content">
-          <h5 class="about-card__name">Kathy Rosenberg</h5>
-          <p class="about-card__role">Product Mannager</p>
-          <a class="about-card__mail" href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
+  <section class="about">
+    <div class="about__wrapper wrapper">
+      <h2 class="about__title">About Us</h2>
+      <p class="about__descr">Your About Us page is vital. It’s often the first stop in any user’s journey through a
+        website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do
+        in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome
+        content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
+      <div class="about__cards-container">
+        <div class="about__cards columns-3">
+          <div class="about-card">
+            <div class="about-card__content">
+              <h5 class="about-card__name">Kathy Rosenberg</h5>
+              <p class="about-card__role">Product Mannager</p>
+              <a class="about-card__mail" href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
+            </div>
+            <img class="about-card__img" src="/src/assets/img/png/avatar-1.png" alt="avatar">
+          </div>
+          <div class="about-card">
+            <div class="about-card__content">
+              <h5 class="about-card__name">Alexandra Boyarskaya</h5>
+              <p class="about-card__role">Support Marketing Specialist</p>
+              <a class="about-card__mail" href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
+            </div>
+            <img class="about-card__img" src="/src/assets/img/png/avatar-2.png" alt="avatar">
+          </div>
+          <div class="about-card">
+            <div class="about-card__content">
+              <h5 class="about-card__name">Melani Amini</h5>
+              <p class="about-card__role">Photographer</p>
+              <a class="about-card__mail" href="mailto:melania@gmail.com">melania@gmail.com</a>
+            </div>
+            <img class="about-card__img" src="/src/assets/img/png/avatar-3.png" alt="avatar">
+          </div>
         </div>
-        <img class="about-card__img" src="/src/assets/img/png/avatar-1.png" alt="avatar">
       </div>
-      <div class="about-card">
-        <div class="about-card__content">
-          <h5 class="about-card__name">Alexandra Boyarskaya</h5>
-          <p class="about-card__role">Support Marketing Specialist</p>
-          <a class="about-card__mail" href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
-        </div>
-        <img class="about-card__img" src="/src/assets/img/png/avatar-2.png" alt="avatar">
-      </div>
-      <div class="about-card">
-        <div class="about-card__content">
-          <h5 class="about-card__name">Melani Amini</h5>
-          <p class="about-card__role">Photographer</p>
-          <a class="about-card__mail" href="mailto:melania@gmail.com">melania@gmail.com</a>
-        </div>
-        <img class="about-card__img" src="/src/assets/img/png/avatar-3.png" alt="avatar">
+      <div class="dots__wrapper">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
       </div>
     </div>
   </section>
@@ -254,30 +271,30 @@
     <div class="footer-navigation columns-3">
       <div class="footer-navigation__column">
         <h6 class="footer-navigation__title">Quick Links</h4>
-            <ul class="footer-navigation__list">
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">About Us</a></li>
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Blog</a></li>
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Contact</a></li>
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">FAQ</a></li>
-            </ul>
+          <ul class="footer-navigation__list">
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">About Us</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Blog</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Contact</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">FAQ</a></li>
+          </ul>
       </div>
       <div class="footer-navigation__column">
         <h6 class="footer-navigation__title">Legal Stuff</h4>
-            <ul class="footer-navigation__list">
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Disclaimer</a></li>
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Financing</a></li>
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Privacy Policy</a></li>
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Terms of Service</a></li>
-            </ul>
+          <ul class="footer-navigation__list">
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Disclaimer</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Financing</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Privacy Policy</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Terms of Service</a></li>
+          </ul>
       </div>
       <div class="footer-navigation__column">
         <h6 class="footer-navigation__title">Quick Links</h4>
-            <ul class="footer-navigation__list">
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">About Us</a></li>
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Blog</a></li>
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Contact</a></li>
-              <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">FAQ</a></li>
-            </ul>
+          <ul class="footer-navigation__list">
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">About Us</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Blog</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">Contact</a></li>
+            <li class="footer-navigation__item"><a class="footer-navigation__link" href="#">FAQ</a></li>
+          </ul>
       </div>
     </div>
   </footer>

@@ -13,6 +13,16 @@
 
   &__layout {
     margin: 31px 0 0;
+
+    >* {
+      @include media-laptop-s {
+        flex-basis: 40%;
+      }
+
+      @include media-tablet {
+        flex-basis: 48%;
+      }
+    }
   }
 }
 
@@ -20,27 +30,40 @@
   border-radius: 8px;
   box-shadow: 0px 4px 20px $shadow-color;
   margin: 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   cursor: pointer;
   @extend %transition;
+
+  @include media-laptop-s {
+    overflow: hidden;
+    padding-top: 200px;
+  }
+
   &:hover {
     box-shadow: 0px 0px 0px $shadow-color;
   }
 
-  &_wide {
-    flex-basis: 787px;
-  }
-
   &__img {
-    display: block;
+    
     border-radius: 8px 8px 0 0;
+    @include media-laptop-s {
+      position:absolute;
+      top: 0;
+    }
   }
 
   &__content {
     padding: 24px 34px 26px 33px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
   &__title {
     margin: 0 0 31px;
+    flex-grow: 1;
   }
 
 }

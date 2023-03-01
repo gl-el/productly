@@ -1,11 +1,26 @@
 .promo {
-  padding: 30px 0 111px 0;
-  display: flex;
-  justify-content: space-between;
   @extend %font-add;
+  @include media-tablet {
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    padding: 30px 0 111px 0;
+    display: flex;
+    justify-content: space-between;
+    @include media-tablet {
+      padding: 30px 265px 111px 0;
+      position: relative;
+    }
+  }
+
 
   &__title {
     margin-top: 83px;
+
+    @include media-laptop-s {
+      margin-top: 0px;
+    }
   }
 
   &__text {
@@ -34,5 +49,16 @@
 
   &__img {
     max-width: 642px;
+
+    @include media-laptop-s {
+      max-width: 50%;
+      height: 50%;
+    }
+    @include media-tablet {
+      position: absolute;
+      max-width:  592px;
+      height: auto;
+      left: 355px;
+    }
   }
 }

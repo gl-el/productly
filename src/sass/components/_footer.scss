@@ -2,12 +2,22 @@
   padding: 56px 0 52px;
   display: flex;
   justify-content: space-between;
+
+  @include media-tablet {
+    flex-direction: column;
+    gap: 34px;
+  }
 }
 
 .footer-navigation {
   flex-grow: 1;
   padding-left: 160px;
   padding-right: 120px;
+
+  @include media-tablet {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   &__column {
     max-width: 140px;
@@ -26,7 +36,7 @@
     @include font ($size: 1.6rem, $height: 3.5rem, $weight: 400);
     text-decoration: none;
     color: $text-color;
-    
+
     &:hover {
       color: $orange;
     }

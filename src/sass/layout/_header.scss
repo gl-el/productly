@@ -3,6 +3,18 @@
   padding: 9px 0 9px 0;
 }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+  &_active {
+    z-index: 4;
+  }
+}
+
+.header__burger {
+  margin-right: 37px;
+}
+
 .header__wrapper {
   display: flex;
   align-items: center;

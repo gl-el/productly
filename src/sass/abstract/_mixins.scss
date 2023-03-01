@@ -14,3 +14,11 @@
     flex-basis: $width;
   }
 }
+
+@mixin media-laptop-s {
+  @media (max-width: $desktop-small) { @content; }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet) { @content; }
+}

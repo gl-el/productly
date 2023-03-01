@@ -1,7 +1,14 @@
 $img-gap: 34px;
 
 .about {
-  padding: 0 0 102px;
+
+  @include media-tablet {
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    padding: 0 0 102px;
+  }
 
   &__title {
     margin: 66px 0 0;
@@ -13,11 +20,26 @@ $img-gap: 34px;
   }
 
   &__cards {
-    margin: 45px 0 0;
     padding-right: $img-gap;
+    @include media-tablet {
+      width: $tablet;
+      position: absolute;
+      flex-wrap: nowrap;
+      gap: calc($img-gap * 2);
+    }
+  }
+
+  &__cards-container {
+    margin: 45px 0 0;
+    @include media-tablet {
+      width: $tablet;
+      height: 142px;
+      position: relative;
+    }
   }
 
 }
+
 
 .about-card {
   max-width: calc(30% - 6px);
@@ -27,8 +49,15 @@ $img-gap: 34px;
   box-shadow: 0px 4px 20px $shadow-color;
   border-radius: 10px;
 
+  @include media-tablet {
+    flex-basis: 377px;
+    max-width: 377px;
+    white-space: nowrap;
+  }
+
   &__content {
     padding: 35px 0 35px 35px;
+    width: 200px;
     @include font($size: 1.4rem, $height: 2.2rem, $weight: 400);
   }
 
@@ -53,5 +82,31 @@ $img-gap: 34px;
     position: relative;
     left: $img-gap;
     box-shadow: 0px 15px 30px $shadow-color;
+  }
+}
+
+.dots__wrapper {
+  margin: 10px 0 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  display: none;
+  @include media-tablet {
+    display: flex;
+  }
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid $white;
+  background-color: $zeus;
+  background-clip: content-box;
+  padding: 2px;
+
+  &_active {
+    border: 1px solid $zeus;
   }
 }

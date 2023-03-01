@@ -5,4 +5,7 @@ body {
 
 .wrapper {
   margin: 0 120px 0 122px;  
+  @include media-laptop-s {
+    margin: 0 46px 0 46px;
+  }
 }
